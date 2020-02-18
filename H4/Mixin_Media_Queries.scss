@@ -1,0 +1,55 @@
+@mixin xs-screen() {
+  @media (min-width: 576px) {
+    @content
+  }
+}
+@mixin sm-screen() {
+  @media (min-width: 768px) {
+    @content
+  }
+}
+@mixin md-screen() {
+  @media (min-width: 992px) {
+    @content
+  }
+}
+@mixin lg-screen() {
+  @media (min-width: 1200px) {
+    @content
+  }
+}
+@mixin xl-screen() {
+  @media (min-width: 1200px) {
+    @content
+  }
+}
+
+h1{
+  @include xs-screen{
+    color: green;
+  }
+}
+
+h1{
+  @include sm-screen{
+    color: deeppink;
+  }
+}
+
+h1{
+  @include md-screen{
+    color: coral;
+  }
+}
+
+h1{
+  @include lg-screen{
+    color: darkblue;
+  }
+}
+
+h1{
+  @include xl-screen{
+    color: crimson;
+  }
+}
